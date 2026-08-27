@@ -45,3 +45,4 @@ chromadb
 sentence-transformers
 langchain-chroma
 langchain-text-splitters
+torchvision
