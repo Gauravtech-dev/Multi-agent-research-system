@@ -8,10 +8,13 @@ import os
 
 load_dotenv()
 
+api_key = os.environ["GEMINI_API_KEY"]
+
 llm = ChatGoogleGenerativeAI(
     model="gemini-3.5-flash-lite",
     temperature=0,
-    gemini_api_key=os.environ["GEMINI_API_KEY"]
+    google_api_key=api_key,
+    vertexai=False
 )
 
 
