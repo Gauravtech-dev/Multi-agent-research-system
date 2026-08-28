@@ -5,14 +5,13 @@ from langchain_core.output_parsers import StrOutputParser
 from tools import web_search, scrape_url
 from dotenv import load_dotenv
 import os
-from dotenv import load_dotenv
 
 load_dotenv()
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-3.5-flash-lite",
     temperature=0,
-    gemini_api_key=os.environ("GEMINI_API_KEY")
+    gemini_api_key=os.environ["GEMINI_API_KEY"]
 )
 
 
